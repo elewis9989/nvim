@@ -5,8 +5,10 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
+        "astro",
         "bash",
-        "vimdoc",
+        "css",
+        "fish",
         "html",
         "javascript",
         "json",
@@ -19,9 +21,8 @@ return {
         "tsx",
         "typescript",
         "vim",
+        "vimdoc",
         "yaml",
-        "fish",
-        "css",
       },
       autotag = {
         enable = true,
