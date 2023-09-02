@@ -1,17 +1,13 @@
 return {
   {
     "folke/tokyonight.nvim",
-    lazy = true,
+    lazy = false,
     opts = { style = "moon" },
   },
 
   { "savq/melange-nvim" },
 
-  {
-    "xero/miasma.nvim",
-    lazy = false,
-    priority = 1000,
-  },
+  { "ellisonleao/gruvbox.nvim" },
 
   {
     "LazyVim/LazyVim",
