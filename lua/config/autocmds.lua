@@ -21,6 +21,21 @@ vim.api.nvim_create_autocmd("ModeChanged", {
   group = luasnip_fix_augroup,
 })
 
+-- Turn off paste-mode when leaving insert mode
+vim.api.nvim_create_autocmd("InsertLeave", {
+  pattern = "*",
+  command = "set nopaste",
+})
+
+-- Fix conceallevel for json files
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "json",
+  callback = function()
+    vim.wo.spell = false
+    vim.wo.conceallevel = 0
+  end,
+})
+
 -- Open folds by default
 -- local treesitter_au = vim.api.nvim_create_augroup("treesitter_au", { clear = true })
 -- vim.api.nvim_create_autocmd("BufReadPost,FileReadPost", {

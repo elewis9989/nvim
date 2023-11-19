@@ -3,8 +3,13 @@
 -- Add any additional keymaps here
 --
 local bind = vim.keymap.set
+local opts = { noremap = true, silent = true }
 
 -- ============= Basic Keymaps =============
+
+-- Increment/Decrement
+bind("n", "+", "<C-a>")
+bind("n", "-", "<C-x>")
 
 -- Auto indent pasted text
 bind("n", "p", "]p")

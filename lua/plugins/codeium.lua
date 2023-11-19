@@ -1,5 +1,5 @@
 return {
-  "Exafunction/codeium.vim",
+  "Exafunction/codeium.nvim",
   config = function()
     vim.g.codeium_disable_bindings = 1
     vim.keymap.set("i", "<C-l>", function()
