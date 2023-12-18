@@ -1,5 +1,9 @@
 return {
   {
+    "Yazeed1s/oh-lucy.nvim",
+    lazy = true,
+  },
+  {
     "craftzdog/solarized-osaka.nvim",
     lazy = true,
     priority = 1000,
@@ -22,7 +26,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "oh-lucy",
     },
   },
 }
