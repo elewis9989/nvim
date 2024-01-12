@@ -39,14 +39,3 @@ vim.api.nvim_create_autocmd("FileType", {
 -- Override highlight colors
 vim.cmd("highlight Visual cterm=NONE ctermbg=102  ctermfg=16  gui=NONE guibg=#878787 guifg=#000000")
 vim.cmd("highlight TelescopeSelection guifg=#1F2233 guibg=#BDA9D4")
-
--- Open folds by default
--- local treesitter_au = vim.api.nvim_create_augroup("treesitter_au", { clear = true })
--- vim.api.nvim_create_autocmd("BufReadPost,FileReadPost", {
---   pattern = "*",
---   callback = function()
---     vim.cmd("normal zx")
---     vim.cmd("normal zR")
---   end,
---   group = treesitter_au,
--- })
