@@ -2,6 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 --
+local Util = require("lazyvim.util")
 local bind = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
@@ -38,3 +39,8 @@ bind("n", "<C-j>", "<cmd>TmuxNavigateDown<cr>")
 bind("n", "<C-k>", "<cmd>TmuxNavigateUp<cr>")
 bind("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>")
 bind("n", "<C-\\>", "<cmd>TmuxNavigatePrevious<cr>")
+
+--
+bind("n", "<leader>ub", function()
+  Util.toggle("linebreak")
+end, { desc = "Toggle Linebreak" })
