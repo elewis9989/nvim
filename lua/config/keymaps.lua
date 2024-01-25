@@ -44,3 +44,4 @@ bind("n", "<C-\\>", "<cmd>TmuxNavigatePrevious<cr>")
 bind("n", "<leader>ub", function()
   Util.toggle("linebreak")
 end, { desc = "Toggle Linebreak" })
+-- test
